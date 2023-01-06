@@ -1,0 +1,4 @@
+int1 = int(input("Digite o primeiro número inteiro: "))
+int2 = int(input("Digite o segundo número inteiro: "))
+real = float(input("Digite um número real: "))
+print(f'O dobro de {int1} somado a metade de {int2} é {(int1*2)+(int2/2)} \nO triplo de {int1} somado a {real} é {(int1*3)+real:.1f} \n{real} elevado ao cubo é {real**3:.1f}')
