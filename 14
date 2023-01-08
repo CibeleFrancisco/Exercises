@@ -1,0 +1,10 @@
+#João Papo-de-Pescador, a good man, bought a microcomputer to control the daily income of his work. Every time he brings a weight of fish greater than that established by the fishing regulations of the state of São Paulo (50 kilos), he must pay a fine of R$ 4.00 per excess kilo. John needs you to write a program that reads the weight variable (fish weight) and calculates the excess. Record in the excess variable the amount of kilos beyond the limit and in the fine variable the amount of the fine that João will have to pay. Print the program data with the appropriate messages.
+
+fine = 4
+regulation = float(50.0)
+fish=float(input("Inform the fish weight: "))
+if fish <= regulation:
+    print(f'No fine to be paid.')
+else:
+    difference =fish-regulation
+    print(f'Difference: {difference:.2f} kilo(s)\nFine to be paid: €{difference*fine:.2f}')
