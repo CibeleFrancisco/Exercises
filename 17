@@ -3,3 +3,12 @@ Inform the user of the quantities of ink to be purchased and the respective pric
 buy only 18 liter cans;
 buy only 3.6 liter gallons;
 mix cans and gallons, so that less paint is wasted. Add 10% slack and always round up, ie consider full cans."""
+
+can18=80
+can36=25
+can2=float(3.6)
+can1=18
+liter=float(6.0)
+meters = float(input(f'Inform the meters (m2): '))
+x=round(meters/liter)
+print(f'You will need {x} liter(s). {round(x/can1)} can(s) of 18 liters, will be R${round(x/can1)*can18:.2f} or\n {round(x/can2)} can(s) of 3.6 liters, will be R${round(x/can2)*can36:.2f}')
