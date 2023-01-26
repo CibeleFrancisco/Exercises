@@ -1,0 +1,16 @@
+parede = float(input("Digite o tamanho da parede em metros quadrados (m²): "))
+litro= float(parede/6)
+litrolatagalao = (parede/6)+(parede/6/10)
+lata=float(18)
+precolata=80
+galao=float(3.6)
+precogalao=25
+sobra=round(litrolatagalao % lata+0.5)
+litrolata= round (litro/lata+0.5)
+litrogalao= round (litro/galao+0.5)
+print(f'Você irá precisar de {litro:.2f} litro(s)')
+print(f'Essas são as opções de compra:')
+print('x'*30)
+print(f'1 - {litrolata} lata(s) por R${litrolata*precolata} reais')
+print(f'2 - {litrogalao} galão(ões) por R${litrogalao*precogalao} reais')
+print(f'3 - {litro/lata:.0f} lata(s) somando R${litro//lata*80:.2f} e {round(sobra/galao + 0.5)} galão(ões) somando R${round(sobra/galao+0.5)*25:.2f}. Totalizando R${(litro//lata*80)+(round(sobra/galao+0.5)*25):.2f} ')
